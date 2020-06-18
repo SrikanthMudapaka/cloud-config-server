@@ -1,6 +1,4 @@
 eureka:
-  instance:
-    prefer-ip-address: true
   client:
     register-with-eureka: true
     fetch-registry: true
@@ -9,7 +7,8 @@ eureka:
  
  instance:
     hostname: localhost
-
+    prefer-ip-address: true
+    
 microservice:
   SpringBooPaymentService:
     endpoints:
